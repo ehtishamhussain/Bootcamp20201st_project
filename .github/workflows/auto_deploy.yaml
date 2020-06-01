@@ -29,7 +29,7 @@ jobs:
     - name: Installing  surge
       run: npm install --g surge
     - name: Deploying automatically on surge
-      run: surge ./youapp.surge.sh --token {{ secrets.surge_token}}
+      run: surge ./youapp.surge.sh --token ${{ secrets.surge_token}}
       
     
     
